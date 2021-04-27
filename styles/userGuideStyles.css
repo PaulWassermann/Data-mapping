@@ -1,0 +1,31 @@
+body {
+    background-color: #c0d9f5;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 30px;
+}
+
+p {
+    margin: 10px;
+    margin-bottom: 30px;
+    text-indent: 50px;
+    text-align: justify;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EDF - Exercice Cartographie - Paul Wassermann</title> 
+        
+        <!-- Import custom styles-->
+        <link href='./styles/userGuideStyles.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div class="container">
+            <div class="user-guide">
+                <h1>Contexte</h1>
+                <p>
+                    Il s'agissait de développer un outil de visualisation cartographique de données extraites d'un fichier .csv fourni par
+                    l'utilisateur à l'aide de mapbox GL JS.
+                </p>
+                <h1>Mode d'emploi</h1>
+                <p>
+                    Pour utiliser ma solution à l’exercice proposé, il faut disposer d’un <strong>fichier .csv</strong> respectant ces 
+                    <strong>deux critères</strong> :<br><br>
+                    -	<strong>Le fichier doit contenir une ligne d’en-tête</strong> indiquant la nature des données de chaque colonne. Les 
+                    noms de colonne figurant dans l’en-tête peuvent cependant être librement choisis par l’utilisateur<br><br>
+                    -	Sur chaque ligne, les données doivent impérativement se succéder dans <strong>l’ordre suivant</strong> : 
+                    nom du lieu, longitude, latitude, indicateur 1, indicateur 2, indicateur 3<br><br><br>
+                    
+                    Un <strong>bouton</strong> permet de charger son fichier de données sur la page internet, 
+                    à la suite de quoi l’utilisateur gagne l’accès à de nouvelles fonctionnalités :<br><br>
+                    -	Sur la <strong>gauche</strong> de la carte, une liste des <strong>lignes</strong> du fichier présentant 
+                    une <strong>non-conformité</strong> et ne pouvant donc pas être traitées intégralement 
+                    (absence d’une ou plusieurs valeurs, localisation inconnue, …). 
+                    Certaines de ces données sont <strong>cliquables</strong> et permettent de <strong>naviguer</strong>, 
+                    sur la carte, jusqu’au <strong>marqueur</strong> leur correspondant.<br><br>
+                    -	Sur la <strong>droite</strong>, un menu permettant d’effectuer diverses opérations affectant la visualisation 
+                    des données sur la carte (filtrage par indicateurs, carte thermique, …). Cliquer sur le bouton 
+                    « <strong>Rafraîchir la carte</strong> » afin d’observer les <strong>modifications</strong>.<br><br><br>
+                    Les <strong>marqueurs</strong> présents sur la carte sont <strong>interactifs</strong> : l’utilisateur peut cliquer 
+                    sur chacun d’entre eux afin de visualiser les données attachées à un couple de coordonnées géographiques.<br><br>
+                    Enfin, après la récupération de toutes les données (noter que cela peut prendre un peu de temps), 
+                    l’utilisateur pourra consulter une <strong>table d’agrégation</strong> de données par départements 
+                    (ou autre unité territoriale si pays étranger). Chaque <strong>ligne</strong> de cette table est <strong>cliquable</strong> 
+                    et permet de naviguer vers le département correspondant.
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,162 @@
+body {
+    background-color: #c0d9f5;
+    font-family: Arial;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header h1 {
+    color: #0526b8;
+}
+
+.header a {
+    font-size: large;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLES FOR THE VUE APP */
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#map {
+    width: 750px;
+    height: 750px;
+}
+
+/* STYLES FOR THE  VIZUALISATION OPTIONS COMPONENT */
+.vizualisation-options {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 216, 191);
+    margin-left: 15px;
+    width: 20%;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-box-shadow: 5px 5px 10px grey;
+    -moz-box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.filter-title {
+    text-decoration-line: underline;
+}
+
+.option {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.refresh-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    align-self: center;
+}
+
+.refresh-button:hover {
+    box-shadow: 0px 0px 5px 1px #01c9fc;
+}
+
+/* STYLES FOR THE BAD DATA VIZUALISATION COMPONENT */
+.bad-data-vizualisation {
+    margin-right: 15px;
+    width: 20%;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: rgb(243, 216, 191);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-box-shadow: 5px 5px 10px grey;
+    -moz-box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.bad-data-title {
+    text-decoration-line: underline;
+}
+
+.bad-data-list ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.clickable-p:hover {
+    cursor: pointer;
+    border: 1px solid rgb(236, 165, 98);
+    border-radius: 5px;
+}
+
+/* STYLES FOR THE JOINED DATA COMPONENT */
+
+.joined-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joined-data table {
+    margin: 20px;
+}
+
+.joined-data table, th, td {
+    border: 1px solid #6baaf1;
+    border-collapse: collapse;
+}
+
+.joined-data #clickable:hover {
+    cursor: pointer;
+    background-color: #6baaf1;
+}
+
+.joined-data th, td {
+    padding: 10px;
+}
+
+.joined-data th {
+    text-align: left;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.timer p {
+    margin: 10px;
+    text-align: justify;
+}
+
+.timer .remaining-time {
+    font-weight: 700;
+}
+
